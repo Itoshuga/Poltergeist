@@ -1,0 +1,14 @@
+{
+    "embedColorSuccess": "#ABFFAB",
+    "embedColorWarning": "#FFEE91",
+    "embedColorError": "#FF9696",
+
+    "embedErrorMessage": "Boo! Oops, it looks like a spooky error has appeared",
+
+    "commandDevOnly": "Boo! This command can only be executed by the developers.",
+    "commandTestMode": "Boo! This is still in development and can't be executed on this server.",
+    "commandPremiumOnly": "Boo! This command is for premium users only, spookily enough.",
+
+    "userNoPermissions": "Boo! It seems you don't have enough ghostly permissions to perform this command.",
+    "botNoPermission": "Boo! I'm afraid I lack the spectral permissions to execute this command."
+}
