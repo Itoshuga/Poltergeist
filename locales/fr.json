@@ -1,4 +1,5 @@
 {
-	"ping": "Pong ! La latence est de {{0}}ms. La latence de l'API est de {{1}}ms.",
-	"pong": "Pinging..."
+	"PING_MESSAGE": "Pong ! La latence est de {{0}}ms. La latence de l'API est de {{1}}ms.",
+	"PINGING": "Pinging...",
+	"SET_LANGUAGE": "La langue a été définie sur {{0}}."
 }

@@ -17,12 +17,12 @@ module.exports = {
         i18n.setLocale(language);
 
         // Obtenir le ping (latence) entre l'envoi et la réception d'un message
-        const sent = await interaction.reply({ content: i18n.__('pong'), fetchReply: true });
+        const sent = await interaction.reply({ content: i18n.__('PINGING'), fetchReply: true });
         const ping = sent.createdTimestamp - interaction.createdTimestamp;
         const apiPing = Math.round(interaction.client.ws.ping);
 
         // Modifier la réponse avec le ping réel et le ping de l'API
-        await interaction.editReply(i18n.__('ping', { 
+        await interaction.editReply(i18n.__('PING_MESSAGE', { 
             0: ping, 1: apiPing
         }));
     },

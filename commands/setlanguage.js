@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const i18n = require('i18n');
 const Guild = require('../models/Guild');  // Importer le modèle Guild
 
 module.exports = {
@@ -21,6 +22,9 @@ module.exports = {
         // Chercher la guild dans la base de données
         let guild = await Guild.findOne({ guildId });
 
+        // Définir la locale d'i18n pour cette interaction
+        i18n.setLocale(language);
+
         if (!guild) {
             // Si la guild n'existe pas encore dans la base de données, on la crée
             guild = new Guild({ guildId, language });
@@ -32,6 +36,8 @@ module.exports = {
         }
 
         // Envoyer une confirmation à l'utilisateur
-        await interaction.reply(`La langue a été définie sur ${language === 'en' ? 'English' : 'Français'}.`);
+        await interaction.reply({ content: i18n.__('SET_LANGUAGE', {
+            0: language === 'en' ? 'English' : 'Français'
+        })});
     }
 };
