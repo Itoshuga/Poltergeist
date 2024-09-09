@@ -43,20 +43,5 @@ i18n.configure({
     objectNotation: true  // Support pour les objets imbriqués
 });
 
-
-// if (await mongoose.connect(process.env.MONGODB_URI)) {
-//     console.log('Connected to MongoDB');
-// }
-
-// Connexion à MongoDB
-// mongoose.connect(process.env.MONGODB_URI, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// }).then(() => {
-//     console.log('Connected to MongoDB');
-// }).catch(err => {
-//     console.error('Failed to connect to MongoDB', err);
-// });
-
 // Démarrer le bot
 client.login(process.env.TOKEN);
