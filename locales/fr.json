@@ -1,0 +1,4 @@
+{
+	"ping": "Pong ! La latence est de {{0}}ms. La latence de l'API est de {{1}}ms.",
+	"pong": "Pinging..."
+}
